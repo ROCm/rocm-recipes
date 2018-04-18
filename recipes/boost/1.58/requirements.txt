@@ -1,3 +1,2 @@
-libressl
 bzip2
 zlib
