@@ -24,6 +24,10 @@ if(DEFINED ENV{ROCM_USE_INTERNAL_DEPS})
 install_recipes(internal/*)
 endif()
 
+if(DEFINED ENV{ROCM_USE_MIOPEN_DEPS})
+install_recipes(miopen/*)
+endif()
+
 install(DIRECTORY cmake DESTINATION share/)
 
 enable_testing()
