@@ -1,0 +1,1 @@
+http://ginger.amd.com/project/bzip2/bzip2-bzip2-1.0.6.tar.gz -H sha256:ea21a6efeda65d85f59f4a4dbdf4bd82f48bbaed7d7df0a1044f4f672af4b377 -X build.cmake

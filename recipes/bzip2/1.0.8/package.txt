@@ -1,0 +1,1 @@
+https://gitlab.com/bzip2/bzip2/-/archive/bzip2-1.0.8/bzip2-bzip2-1.0.8.tar.gz -H sha256:329e4eb98f6af8d39da05cb51bccec88ae015eac99a42b1ee04dec0af7f4b957 -X build.cmake
