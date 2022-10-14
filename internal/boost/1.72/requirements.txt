@@ -1,2 +1,2 @@
-bzip2
-zlib
+bzip2@1.0.6
+zlib@1.2.12
