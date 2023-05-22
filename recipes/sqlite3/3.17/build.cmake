@@ -8,6 +8,6 @@ configure_file(sqlite3.pc.in sqlite3.pc)
 include_directories(${CMAKE_SOURCE_DIR})
 add_library(sqlite3 sqlite3.c)
 
-install(FILES sqlite3.h DESTINATION include)
+install(FILES sqlite3.h sqlite3ext.h DESTINATION include)
 install(FILES ${CMAKE_BINARY_DIR}/sqlite3.pc DESTINATION lib)
 install(TARGETS sqlite3 DESTINATION lib)
