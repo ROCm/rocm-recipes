@@ -1,1 +1,1 @@
-http://ginger.amd.com/project/zlib/zlib13.zip -H sha256:c561d09347f674f0d72692e7c75d9898919326c532aab7f8c07bb43b07efeb38
+http://ginger.amd.com/project/zlib/v1.2.13.zip -H sha256:c2856951bbf30e30861ace3765595d86ba13f2cf01279d901f6c62258c57f4ff
