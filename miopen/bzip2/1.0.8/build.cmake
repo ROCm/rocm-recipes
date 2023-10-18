@@ -5,7 +5,7 @@
 # Please note that the package source code is licensed under its own license.
 
 PROJECT(bzip2 C)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+cmake_minimum_required( VERSION 3.11 )
 find_package(cget-recipe-utils)
 # Where to install module parts:
 set(INSTALL_BIN bin CACHE PATH "Where to install binaries to.")
