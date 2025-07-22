@@ -1,5 +1,5 @@
 
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.5)
 project(sqlite3 C)
 
 option(WITH_SQLITE_DEBUG    "Build SQLite debug features" OFF)
