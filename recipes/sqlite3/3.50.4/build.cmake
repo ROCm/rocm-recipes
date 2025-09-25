@@ -25,7 +25,6 @@ target_link_libraries(sqlite3 ${CMAKE_THREAD_LIBS_INIT} ${CMAKE_DL_LIBS})
 
 add_executable(shell shell.c)
 target_link_libraries(shell sqlite3)
-target_link_options(shell PRIVATE "LINKER:-lm")
 set_target_properties(shell PROPERTIES OUTPUT_NAME sqlite3)
 
 set(prefix ${CMAKE_INSTALL_PREFIX})
