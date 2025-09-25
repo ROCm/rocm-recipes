@@ -7,7 +7,6 @@ option(WITH_SQLITE_MEMDEBUG "Build SQLite memory debug features" OFF)
 option(WITH_SQLITE_RTREE    "Build R*Tree index extension" OFF)
 
 find_package(Threads REQUIRED)
-find_library(M_LIB m)
 
 if(WITH_SQLITE_DEBUG)
     add_definitions(-DSQLITE_DEBUG)
@@ -25,7 +24,7 @@ target_link_libraries(sqlite3 ${CMAKE_THREAD_LIBS_INIT} ${CMAKE_DL_LIBS})
 
 add_executable(shell shell.c)
 target_link_libraries(shell sqlite3)
-target_link_options(shell PRIVATE "LINKER:-l${M_LIB}")
+target_link_options(shell PRIVATE "LINKER:-lm")
 set_target_properties(shell PROPERTIES OUTPUT_NAME sqlite3)
 
 set(prefix ${CMAKE_INSTALL_PREFIX})
