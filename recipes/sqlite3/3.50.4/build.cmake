@@ -26,7 +26,12 @@ add_executable(shell shell.c)
 target_link_libraries(shell sqlite3)
 
 if(NOT WIN32)
-    target_link_options(shell PRIVATE "LINKER:-lm")
+    find_library(M_LIB m)
+    if(M_LIB)
+        add_library(math::m SHARED IMPORTED)
+       	set_property(TARGET math::m PROPERTY IMPORTED_LOCATION ${M_LIB})
+       	target_link_libraries(shell math::m)
+    endif()
 endif()
 
 set_target_properties(shell PROPERTIES OUTPUT_NAME sqlite3)
